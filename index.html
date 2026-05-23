@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(90deg,#d7e1e9,#ead9e5);
+            padding:20px;
+        }
+
+        .container{
+            width:100%;
+            max-width:950px;
+            background:#f7f7f7;
+            border-radius:30px;
+            overflow:hidden;
+            display:flex;
+            box-shadow:0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .left{
+            width:50%;
+            padding:45px 45px 25px;
+            background:#f7f7f7;
+        }
+
+        .title{
+            font-size:48px;
+            font-weight:700;
+            color:#111;
+            line-height:1;
+            margin-bottom:15px;
+        }
+
+        .title span{
+            color:#66d9c2;
+        }
+
+        .description{
+            font-size:12px;
+            color:#666;
+            line-height:1.7;
+            margin-bottom:35px;
+            max-width:380px;
+        }
+
+        form{
+            width:100%;
+        }
+
+        .input-box{
+            margin-bottom:20px;
+        }
+
+        .input-box input,
+        .input-box textarea{
+            width:100%;
+            border:none;
+            border-bottom:1px solid #bdbdbd;
+            background:transparent;
+            padding:10px 0;
+            font-size:13px;
+            outline:none;
+            color:#333;
+        }
+
+        .double{
+            display:flex;
+            gap:15px;
+        }
+
+        .double .input-box{
+            width:100%;
+        }
+
+        textarea{
+            height:40px;
+            resize:none;
+        }
+
+        .upload-box{
+            border:1px dashed #bdbdbd;
+            height:80px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            color:#999;
+            font-size:12px;
+            margin-top:10px;
+        }
+
+        .upload-box i{
+            font-size:20px;
+            margin-bottom:5px;
+        }
+
+        .upload-text{
+            margin-top:8px;
+            font-size:11px;
+            color:#999;
+        }
+
+        .checkbox{
+            margin:22px 0;
+            display:flex;
+            align-items:center;
+            gap:10px;
+            font-size:12px;
+            color:#444;
+        }
+
+        .checkbox input{
+            width:14px;
+            height:14px;
+        }
+
+        button{
+            width:100%;
+            height:48px;
+            border:none;
+            border-radius:7px;
+            background:#1577ff;
+            color:white;
+            font-size:13px;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.3s;
+            margin-bottom:30px;
+        }
+
+        button:hover{
+            background:#005be0;
+        }
+
+        .contact-info{
+            display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .info-box{
+            display:flex;
+            align-items:flex-start;
+            gap:10px;
+        }
+
+        .info-box i{
+            font-size:18px;
+            margin-top:2px;
+        }
+
+        .info-text h4{
+            font-size:11px;
+            font-weight:600;
+            margin-bottom:2px;
+        }
+
+        .info-text p,
+        .info-text a{
+            font-size:10px;
+            color:#ff7aa2;
+            text-decoration:none;
+        }
+
+        .right{
+            width:50%;
+            background:#69e0c4;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:30px;
+        }
+
+        .map{
+            width:100%;
+            height:100%;
+            border-radius:0;
+            overflow:hidden;
+        }
+
+        .map iframe{
+            width:100%;
+            height:100%;
+            border:none;
+            min-height:520px;
+        }
+
+        @media(max-width:900px){
+
+            .container{
+                flex-direction:column;
+            }
+
+            .left,
+            .right{
+                width:100%;
+            }
+
+            .title{
+                font-size:38px;
+            }
+
+            .map iframe{
+                min-height:400px;
+            }
+
+        }
+
+        @media(max-width:600px){
+
+            .left{
+                padding:30px 25px;
+            }
+
+            .double{
+                flex-direction:column;
+                gap:0;
+            }
+
+            .title{
+                font-size:30px;
+            }
+
+            .contact-info{
+                flex-direction:column;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="left">
+
+            <h1 class="title">
+                Get in <span>touch</span>
+            </h1>
+
+            <p class="description">
+                Enim tempor eget pharetra facilisis sed maecenas adipiscing.
+                Eu leo molestie vel, ornare non id blandit netus.
+            </p>
+
+            <form>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Contact name">
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Street">
+                </div>
+
+                <div class="double">
+
+                    <div class="input-box">
+                        <input type="text" placeholder="City">
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Postcode">
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Contact Phone">
+                </div>
+
+                <div class="input-box">
+                    <input type="email" placeholder="E-mail">
+                </div>
+
+                <div class="input-box">
+                    <textarea placeholder="Let's talk about your idea"></textarea>
+                </div>
+
+                <div class="upload-box">
+                    ↑
+                    <div>Upload Additional file</div>
+                </div>
+
+                <div class="upload-text">
+                    Attach file. File size of your documents should not exceed 10MB
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <label>
+                        I want to protect my data by signing an NDA
+                    </label>
+                </div>
+
+                <button type="submit">
+                    SUBMIT
+                </button>
+
+            </form>
+
+            <div class="contact-info">
+
+                <div class="info-box">
+
+                    <i>📞</i>
+
+                    <div class="info-text">
+                        <h4>Phone</h4>
+                        <p>111 111 111</p>
+                    </div>
+
+                </div>
+
+                <div class="info-box">
+
+                    <i>✉</i>
+
+                    <div class="info-text">
+                        <h4>E-MAIL</h4>
+                        <p>info@company.com</p>
+                    </div>
+
+                </div>
+
+                <div class="info-box">
+
+                    <i>✉</i>
+
+                    <div class="info-text">
+                        <h4>HELPDESK</h4>
+                        <a href="#">https://helpdesk.com</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="map">
+
+                <iframe 
+                    src="https://maps.google.com/maps?q=Prague&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
